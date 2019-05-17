@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var pText = $("p").text();
+	console.log(pText);
+	alert("9일인  " + pText);
+	var result = confirm("정말로 목요일인가요?");
+	if(result == true){
+		alert("정말로 목요일 이군요!")
+	}else{
+		var today = prompt("그럼 무슨요일일까요?");
+		alert("그럼 오늘은 " + today + "요일 이군요.")
+	}
+	$("h2").text(today);
+});
+
+</script>
+</head>
+<body>
+	<p>오늘은 목요일입니다.</p>
+	<h1>나는 제목</h1>
+	<h2>나도 작은 제목</h2>
+</body>
+</html>

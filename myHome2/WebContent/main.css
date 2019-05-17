@@ -1,0 +1,5 @@
+@charset "EUC-KR";
+/* 선택자 + 속성 정의 */
+h1 {
+		color : blue;
+	}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#total {
+	background-image: url(sky.jpg);
+	width: 800px;
+	height: 1500px;
+	background-color: pink;
+	font-size: 20px;
+}
+
+#top {
+	width: 800px;
+	padding-left: 120px;
+	height: 30px;
+	background: lime;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#top li {
+	list-style: none;
+	/* 	display: inline-block; */
+	float: left;
+	width: 100px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 30px;
+	background-image: url(car.jpg);
+}
+
+#top li:first-child {
+	border-radius: 20px 0px 0px 20px;
+	/* background-color: red; */
+}
+
+#top li:last-child {
+	border-radius: 0px 20px 20px 0px;
+	box-shadow: 10px 10px gray;
+}
+
+#top li:nth-child(2n+1) {
+	background-color: red;
+	box-shadow: 10px 10px gray;
+}
+
+#top li:nth-child(2n) {
+	box-shadow: 10px 10px gray;
+	background-color: orange;
+}
+
+#content {
+	display: inline-block;
+	height: 350px;
+}
+
+#top2 {
+	top: 350px;
+	right: 5px;
+	position: fixed;
+	font: 궁서 10px bold;
+	padding-left: 20px;
+	width: 200px;
+	height: 100px;
+	background-color: black;
+	color: yellow;
+	border-top: 5px solid aqua;
+	border-bottom: 10px double white;
+	border-radius: 100px 10px;
+	box-shadow: 10px 10px yellow;
+}
+</style>
+</head>
+<body>
+	<div id="total">
+		<div id="top">
+			<ul>
+				<li><a href="css7.html">회사소개</a></li>
+				<li><a href="css8.html">회사제품</a></li>
+				<li><a href="css9.html">게시판</a></li>
+				<li><a href="css10.html">회사연락처</a></li>
+			</ul>
+		</div>
+		<div id="top2">
+			<ul>
+				<li><a href="css7.html">회사소개</a></li>
+				<li><a href="css8.html">회사제품</a></li>
+				<li><a href="css9.html">게시판</a></li>
+				<li><a href="css10.html">회사연락처</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<video controls width="190" height="200">
+				<source src="video.mp4" loop="loop">
+			</video>
+		</div>
+		<div id="content">
+			<video controls width="190" height="200">
+				<source src="video.mp4" loop="loop">
+			</video>
+		</div>
+		<div id="content">
+			<video controls width="190" height="200">
+				<source src="video.mp4" loop="loop">
+			</video>
+		</div>
+		<div id="content">
+			<video controls width="190" height="200">
+				<source src="video.mp4" loop="loop">
+			</video>
+		</div>
+
+		<div id="bottom"></div>
+	</div>
+</body>
+</html>
+
+
+
+
