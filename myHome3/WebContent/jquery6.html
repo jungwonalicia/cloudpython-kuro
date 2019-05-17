@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#button").click(function() {
+			$("#input").load("test2.txt");
+			$(document).ready();
+			var data = $("#input").text();
+			$("#content").val(data);  
+			alert($("#date").val().length);
+			if ($("#date").val().length < 1) {
+				alert("날짜를 입력해주세요.");
+				return false;
+			} 
+		});
+	});
+</script>
+</head>
+<body>
+	<h3>읽어온 내용</h3>
+	<hr color="red">
+	<div id="input"></div>
+	<br>
+	<h3>서버로 전송될 내용</h3>
+	<hr color="red">
+	<form action="diary.jsp" method="get">
+		날짜: <input id="date" type="text" name="date"> <br> 제목: <input
+			id="title" type="text" name="title"> <br> 내용: <input
+			id="content" type="text" name="content"> <br> <input
+			id="button" type="submit" value="일기 서버로 전송">
+	</form>
+</body>
+</html>
+
+
+
+
+

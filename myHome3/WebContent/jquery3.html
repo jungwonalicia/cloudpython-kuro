@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("h1").text("나로 바뀌어요.!!!");
+		$("h1").css("background-color", "yellow");
+		//감자를 가지고 와서 고구마 자리에 넣어보세요.
+		$("li:eq(1)").text($("li:eq(0)").text());
+		$("li:eq(0)").text("우유").css("color", "red");
+		$("li:eq(2)").text("초콜릿").css("color", "red");
+		var car = $("img").attr("src");
+		console.log(car);
+		$("img").attr("src", "car2.png");
+		var car = $("img").attr("title");
+		console.log(car);
+		$("img").attr("title", "나는 빨간 자동차");
+		var imsi = $("[href]").text();
+		console.log(imsi);
+		var imsi2 = $("a[href = 'abc.html']").text();
+		console.log(imsi2);
+		$("a").attr("title", "나는 주소야...."); //attr추가
+		/* $("img").removeAttr("src"); */
+		/* $("img[src='car2.png']").attr("width", 100); */
+		$("img[src^='car']").attr("width", 100);
+		$("img[src$='png']").attr("width", 100);
+	});
+</script>
+</head>
+<body>
+	<a href="abc.html" >자주 사용하는 포탈</a>
+	<img src="car.jpg" title="나는 파란 자동차"><br>
+	<h1>우리집 냉장고</h1>
+	<ul>
+		<li>감자</li>
+		<li>고구마</li>
+		<li>양파</li>
+	</ul>
+</body>
+</html>
+
+
+
+
+

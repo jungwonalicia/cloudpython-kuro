@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		/* $("p").text($("h1").text()); */
+/* 		var h1 = $("h1").clone();
+		$("p").append(h1);
+		$("h2").append(h1);
+		$("h1").insertBefore("h3");
+		$("p").remove(); //자기 자신을 제거
+		$("ul").empty(); //자식을 제거 */
+		
+		$("#button").click(function() {
+			var id = $("#id").val();
+			var pw = $("#pw").val();
+			alert(id.length);
+			if(id.length < 5 || pw.length < 5){ //or=>||, and=>&&
+				alert("5글자 이상을 입력해야합니다.");
+				return false; //true, false
+			}
+			
+			alert("나를 눌렀군요..!!!")
+		});		
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li>감자</li>
+		<li>고구마</li>
+	</ul>
+	<h1>회원가입 화면</h1>
+	<h2>나는 h2</h2>
+	<h3>나는 h3</h3>
+	<form action="member.jsp" method="get">
+		회원ID: <input id="id" type="text" name="id"> <br>
+		회원PW: <input id="pw" type="text" name="pw"> <br>
+		회원NAME: <input id="name" type="text" name="name"> <br>
+		회원TEL: <input id="tel" type="text" name="tel"> <br>
+		<input id="button" type="submit" value="회원가입완료">
+	</form>	
+	<p>나는 p태그 내용</p>
+</body>
+</html>
+
+
+
+
+
